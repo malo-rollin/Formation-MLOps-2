@@ -21,6 +21,10 @@ def monitor_with_io(predictions_folder: str, db_con_str: str, monitoring_table_n
 
 def monitor(latest_predictions: pd.DataFrame) -> pd.DataFrame:
     # Start filling function
-    monitoring_df = pd.DataFrame
+    # print(latest_predictions.columns)
+    # print(latest_predictions.head(5))
+    # monitoring_df = latest_predictions.value_counts().to_frame()
+    # print(monitoring_df.columns)
+    # print(monitoring_df.head(5))
     # End filling function
-    return monitoring_df
+    return latest_predictions
